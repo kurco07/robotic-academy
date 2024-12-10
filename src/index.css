@@ -1,0 +1,850 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1280px;
+  font-family: sans-serif;
+}
+
+.imagenes {
+  min-height: 600px;
+}
+
+/* NavBar */
+.bar {
+  display: flex; /* Establecemos un contenedor flexible */
+  justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  padding: 20px; /* Añade espacio alrededor de los elementos */
+}
+
+.leftBar,
+.rightBar {
+  display: flex; /* Hacemos que los elementos dentro de leftBar y rightBar se comporten como flex */
+  align-items: center;
+}
+
+.rightBar {
+  gap: 10px;
+}
+
+.ul_navbar {
+  list-style: none; /* Eliminamos los marcadores de lista */
+  display: flex; /* Convertimos la lista en un flex container */
+  gap: 20px; /* Espacio entre los elementos de la lista */
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulo_logo {
+  margin-right: 20px; /* Espacio entre el título y la lista */
+}
+
+/* Estilo base para todos los botones */
+.btn {
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  min-width: 200px;
+  max-width: 200px;
+  text-align: center; /* Asegura que el texto esté centrado */
+  display: inline-block; /* Para que se comporten como botones */
+  text-decoration: none; /* Asegura que los Links no tengan subrayado */
+  cursor: pointer;
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Fuerza el texto en negritas */
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón principal (main) */
+.main {
+  background-color: #3434ff;
+  color: white;
+}
+
+/* Estilos para el botón secundario (secundary) */
+.secundary {
+  color: #3434ff;
+  background-color: #ffffff;
+  border: 2px solid #3434ff;
+}
+
+/* Efecto al pasar el mouse (hover) */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* .btn {
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  min-width: 200px;
+  max-width: 200px;
+} */
+
+/* Boton primrario y boton secundario */
+
+/* .main {
+  background-color: #3434ff;
+  color: white;
+  font-weight: bold;
+}
+
+.secundary {
+  color: #3434ff;
+  background-color: #ffffff;
+  border: 2px solid #3434ff;
+  font-weight: bold;
+} */
+
+/* Primera seccion */
+.container {
+  display: flex; /* Hacemos que los elementos hijos se comporten como flex items */
+  justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  height: 100vh;
+}
+
+.left {
+  width: 65%; /* Asignamos el 50% del ancho a cada sección */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos adicionales para el texto, botón e imagen */
+.left h1 {
+  font-size: 3rem;
+}
+.left button {
+  /* Estilos para el botón */
+}
+.right img {
+  width: 100%; /* La imagen ocupa todo el ancho de la sección */
+  height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+/* subtitulo */
+
+.subtitulo {
+  opacity: 0.6;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.cuadroBotones {
+  display: flex;
+  gap: 20px;
+}
+
+/* Seccion 3 */
+.containerSeccion {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.seccion2,
+.seccion3 {
+  display: flex;
+  text-align: justify;
+  gap: 20px;
+}
+
+.svg {
+  width: 135px;
+}
+
+.seccion1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* CourseCard.css */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  width: 330px;
+  height: 480px;
+}
+
+.card-img-top {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  height: 209px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.card-title {
+  font-size: 22px;
+  text-align: left;
+}
+
+.card-text {
+  opacity: 0.6;
+}
+/* Login.css */
+
+.login-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  border-radius: 34px;
+  opacity: 0.9;
+  color: black;
+  width: 500px;
+  gap: 24px;
+}
+
+.padre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.botonesLogin {
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 20px;
+  opacity: 0.7;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.labelText {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+
+.textfield {
+  width: 100%;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuadro {
+  display: flex;
+  gap: 8px;
+}
+
+/* Modulos */
+
+.cuadro-modulo {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  gap: 5px;
+  padding: 8px;
+  border: 4px solid #3434ff;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.img-modulo {
+  width: 50px;
+}
+
+.cursos-modulos {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* curso */
+.curso-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.curso-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.curso-video {
+  margin-bottom: 30px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.curso-descripcion {
+  margin-bottom: 30px;
+}
+
+.curso-descripcion h2 {
+  margin-bottom: 10px;
+}
+
+.curso-pdf {
+  text-align: center;
+}
+
+.curso-pdf .btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #3434ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.curso-pdf .btn:hover {
+  background-color: #1e1ebb;
+}
+
+/*Profesor curso*/
+.profesor-page {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+textarea,
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.video-preview {
+  margin-top: 10px;
+}
+
+.preview-section {
+  margin-top: 30px;
+}
+
+.btn.main {
+  background-color: #3434ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* about */
+
+/* General Styles */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Azul robótico */
+}
+
+/* Section Titles */
+.about-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #0056b3;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
+
+/* Intro Section */
+.about-intro p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Offer Section */
+.about-offer ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-offer ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Values Section */
+.about-values ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.about-values ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* History Section */
+.about-history p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Join Section */
+.about-join p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.about-join .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-join .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-join p {
+    font-size: 1rem;
+  }
+
+  .about-join .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* PROFESOR */
+/* Estilos generales */
+
+.home-profesor {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Botones */
+.btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.main {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn.main:hover {
+  background-color: #2980b9;
+}
+
+/* Formulario para agregar módulos */
+.formulario-nuevo-modulo {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-nuevo-modulo h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.formulario-nuevo-modulo label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formulario-nuevo-modulo input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Contenedor de módulos */
+.modulos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.modulo-item {
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modulo-item h4 {
+  color: #34495e;
+}
+
+.modulo-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.modulo-item button {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modulo-item button:first-of-type {
+  background-color: #3498db;
+  color: white;
+}
+
+.modulo-item button:first-of-type:hover {
+  background-color: #2980b9;
+}
+
+.modulo-item button:nth-of-type(2) {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.modulo-item button:nth-of-type(2):hover {
+  background-color: #d4ac0d;
+}
+
+.modulo-item button:nth-of-type(3) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.modulo-item button:nth-of-type(3):hover {
+  background-color: #c0392b;
+}
+
+/* ELIMINAR POSIBLEMENTE  */
+
+/* Contenedor principal */
+.mp-container {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.mp-titulo {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.mp-nivel {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.mp-subtitulo {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #34495e;
+}
+
+/* Cursos */
+.mp-cursos-lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mp-curso-item {
+  background: #ecf0f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.mp-curso-titulo {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.mp-curso-descripcion,
+.mp-curso-duracion,
+.mp-curso-video,
+.mp-curso-pdf {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Botones */
+.mp-curso-editar {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.mp-curso-eliminar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.mp-toggle-formulario,
+.mp-formulario-guardar,
+.mp-volver {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mp-toggle-formulario {
+  background-color: #8e44ad;
+  color: white;
+}
+
+.mp-volver {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* EDITAR CURSOS */
+
+.editar-curso {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editar-curso__titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.editar-curso__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.editar-curso__label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.editar-curso__input,
+.editar-curso__textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.editar-curso__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.editar-curso__video-preview {
+  margin-top: 10px;
+}
+
+.editar-curso__video {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.editar-curso__archivo {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.editar-curso__botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.editar-curso__btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editar-curso__btn.guardar {
+  background-color: #28a745;
+  color: white;
+}
+
+.editar-curso__btn.cancelar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.editar-curso__btn:hover {
+  opacity: 0.9;
+}
+
+.editar-curso__mensaje-error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
